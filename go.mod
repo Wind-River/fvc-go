@@ -1,4 +1,4 @@
-module gitlab.devstar.cloud/ip-systems/verification-code
+module gitlab.devstar.cloud/ip-systems/verification-code.git
 
 go 1.18
 
