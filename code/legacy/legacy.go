@@ -7,7 +7,7 @@ import (
 	"sort"
 
 	"github.com/pkg/errors"
-	"gitlab.devstar.cloud/ip-systems/verification-code/hasher"
+	"gitlab.devstar.cloud/ip-systems/verification-code.git/hasher"
 )
 
 type LegacyHasher struct {

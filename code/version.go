@@ -6,7 +6,7 @@ import (
 	"fmt"
 
 	"github.com/pkg/errors"
-	"gitlab.devstar.cloud/ip-systems/verification-code/code/legacy"
+	"gitlab.devstar.cloud/ip-systems/verification-code.git/code/legacy"
 )
 
 func VersionOf(b []byte) (Version, error) {
