@@ -31,7 +31,7 @@ func (h *LegacyHasher) AddSha1Hex(s string) error {
 	if b, err := hex.DecodeString(s); err != nil {
 		return errors.Wrapf(err, "error decoding hex string")
 	} else if len(b) != 20 {
-		return errors.New("sha1 hashes are 20 bytes long")
+		return errors.New("sha1 hashes are 20 bytes long; got " + s)
 	}
 
 	h.fileSha1Hexs = append(h.fileSha1Hexs, s)
