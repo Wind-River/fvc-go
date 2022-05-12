@@ -62,7 +62,7 @@ func (h VersionTwoHasher) Sum() []byte {
 	for _, v := range h.fileSha256s {
 		hasher.Write(v)
 	}
-	return append([]byte("fvc2"), hasher.Sum(nil)...)
+	return append([]byte("FVC2\000"), hasher.Sum(nil)...)
 }
 
 func (h VersionTwoHasher) Hex() string {

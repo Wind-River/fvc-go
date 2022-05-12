@@ -48,7 +48,7 @@ func (h VersionOneHasher) Sum() []byte {
 	for _, v := range h.fileSha1Hexs {
 		hasher.Write([]byte(v))
 	}
-	return append([]byte("fvc1"), hasher.Sum(nil)...)
+	return append([]byte("FVC1\000"), hasher.Sum(nil)...)
 }
 
 func (h VersionOneHasher) Hex() string {
