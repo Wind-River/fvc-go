@@ -42,18 +42,19 @@ func VersionOf(b []byte) (*Version, error) {
 	}
 }
 
-func VersionOfHex(s string) (Version, error) {
+func VersionOfHex(s string) (*Version, error) {
 	if len(s) == 40 { // check if version 0
 		if valid := legacy.ValidHex(s); !valid {
-			return VERSION_ZERO, errors.New("invalid")
+			return nil, errors.New("invalid")
 		}
 
-		return VERSION_ZERO, nil
+		v := VERSION_ZERO
+		return &v, nil
 	}
 
 	b, err := hex.DecodeString(s)
 	if err != nil {
-		return 0, errors.New(fmt.Sprintf("invalid hex: \"%s\"", s))
+		return nil, errors.New(fmt.Sprintf("invalid hex: \"%s\"", s))
 	}
 
 	return VersionOf(b)
