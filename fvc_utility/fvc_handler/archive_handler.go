@@ -15,7 +15,7 @@ import (
 	"path/filepath"
 
 	extract "github.com/Wind-River/extract-go"
-	"github.com/Wind-River/fvc-go.git/hasher"
+	"github.com/Wind-River/fvc-go/hasher"
 	"github.com/pkg/errors"
 )
 

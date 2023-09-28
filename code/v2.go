@@ -16,7 +16,7 @@ import (
 	"io"
 	"sort"
 
-	"github.com/Wind-River/fvc-go.git/hasher"
+	"github.com/Wind-River/fvc-go/hasher"
 	"github.com/pkg/errors"
 )
 

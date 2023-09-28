@@ -1,4 +1,4 @@
-module github.com/Wind-River/fvc-go.git
+module github.com/Wind-River/fvc-go
 
 go 1.18
 

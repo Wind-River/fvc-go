@@ -14,8 +14,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Wind-River/fvc-go.git/code"
-	fvchandler "github.com/Wind-River/fvc-go.git/fvc_utility/fvc_handler"
+	"github.com/Wind-River/fvc-go/code"
+	fvchandler "github.com/Wind-River/fvc-go/fvc_utility/fvc_handler"
 )
 
 var inBytes bool
