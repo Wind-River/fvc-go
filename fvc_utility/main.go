@@ -14,8 +14,8 @@ import (
 	"fmt"
 	"os"
 
-	"gitlab.devstar.cloud/ip-systems/verification-code.git/code"
-	fvchandler "gitlab.devstar.cloud/ip-systems/verification-code.git/fvc_utility/fvc_handler"
+	"github.com/Wind-River/fvc-go.git/code"
+	fvchandler "github.com/Wind-River/fvc-go.git/fvc_utility/fvc_handler"
 )
 
 var inBytes bool

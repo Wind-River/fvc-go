@@ -14,9 +14,9 @@ import (
 	"os"
 	"path/filepath"
 
+	extract "github.com/Wind-River/extract-go"
+	"github.com/Wind-River/fvc-go.git/hasher"
 	"github.com/pkg/errors"
-	"gitlab.devstar.cloud/ip-systems/extract.git"
-	"gitlab.devstar.cloud/ip-systems/verification-code.git/hasher"
 )
 
 // Struct for holding some flags, file count and list of extracted packages

@@ -16,8 +16,8 @@ import (
 	"io"
 	"sort"
 
+	"github.com/Wind-River/fvc-go.git/hasher"
 	"github.com/pkg/errors"
-	"gitlab.devstar.cloud/ip-systems/verification-code.git/hasher"
 )
 
 type VersionTwoHasher struct {

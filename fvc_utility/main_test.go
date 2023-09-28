@@ -15,8 +15,8 @@ import (
 	"os"
 	"testing"
 
-	"gitlab.devstar.cloud/ip-systems/verification-code.git/code"
-	fvchandler "gitlab.devstar.cloud/ip-systems/verification-code.git/fvc_utility/fvc_handler"
+	"github.com/Wind-River/fvc-go.git/code"
+	fvchandler "github.com/Wind-River/fvc-go.git/fvc_utility/fvc_handler"
 )
 
 // TestCheckIfPkg tests the CheckIfPkg function with the input
@@ -51,7 +51,8 @@ func TestCalculateFvc(t *testing.T) {
 
 // TestExtractSubPkg tests the ExtractSubPkg function with the input
 // of an archive and check if the result is an error
-//  or nil and throws an error in case of error
+//
+//	or nil and throws an error in case of error
 func TestExtractSubPkg(t *testing.T) {
 	Bytes := false
 	Verbose := false
@@ -66,7 +67,8 @@ func TestExtractSubPkg(t *testing.T) {
 
 // TestReadDirectory tests the ReadDirectory function with the input
 // of a directory and check if the result is an error
-//  or nil and throws an error in case of error
+//
+//	or nil and throws an error in case of error
 func TestReadDirectory(t *testing.T) {
 	Bytes := false
 	Verbose := false
@@ -95,7 +97,8 @@ func TestExtractPkg(t *testing.T) {
 
 // TestRemovePkg tests the RemovePkg function with the input
 // of a list of directories and check if the result is an error
-//  or nil and throws an error in case of error
+//
+//	or nil and throws an error in case of error
 func TestRemovePkg(t *testing.T) {
 	Bytes := false
 	Verbose := false
